@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #buyingdiv {
     display: flex;
     flex-direction: column;
@@ -22,29 +21,4 @@
     font-size: 24px;
     color: #003cbe;
     margin-bottom: 5vh;
-=======
-#buyingdiv {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-top: 5vh;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    gap: 2.5vh;
-}
-
-#propertytext {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-}
-
-#listinglink {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    color: #003cbe;
-    margin-bottom: 5vh;
->>>>>>> fe56e2fa5469d2975fddf024665d62e7c2bbb086
 }
