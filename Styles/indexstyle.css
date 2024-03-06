@@ -1,0 +1,72 @@
+#welcomediv {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#topwelcome {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 35px;
+    background-color: rgb(255, 255, 255);
+}
+
+#welcomeimage {
+    width: 375px;
+    height: auto;
+    margin-left: 2.5vw;
+    border: 1px solid #000
+}
+
+#welcomeintro {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#welcomeparagraph {
+    font-size: 17px;
+    color: #000000;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#whymediv {
+    background-color: #ffffff;
+    padding: 10px 35px;
+    margin: 0px 0px;
+}
+
+#whymetitle {
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#whymelist {
+    font-size: 19px;
+    color: #000000;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#welcomeclose {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 970px) {
+    #topwelcome {
+        flex-direction: column-reverse;
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+    }
+
+    #welcomeimage {
+        padding-left: 0;
+    }
+}
