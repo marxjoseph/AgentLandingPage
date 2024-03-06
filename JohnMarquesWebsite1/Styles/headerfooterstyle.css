@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Candara', Arial;
+    background-image: url("../Images/houses.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    grid-template-areas:
+        "top top top"
+        ". name ."
+        ". . .";
+}
+
+#topname {
+    grid-area: name;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Georgia', Arial;
+    font-size: 4em;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgb(151, 179, 201, 0.5);*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: row;
+    grid-area: top;
+    gap: 10px;
+}
+
+#topleftlogo {
+    padding-top: 5vh;
+    padding-left: 1vw;
+}
+
+#logo {
+    height: 55px;
+}
+
+#logoballoon {
+    height: 55px;
+}
+
+header nav {
+    padding-top: 5vh;
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin-right: 4vw;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#activepage {
+    color: rgb(0, 0, 0);
+    cursor: default;
+    text-decoration: underline;
+}
+
+.rightmost {
+    padding-right: 1vw;
+}
+
+.commonborder {
+    border: 2px solid #000000;
+    margin: 0px;
+    width: 100vw;
+}
+
+#topfooter {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+}
+
+#contactinfo {
+    font-family: Arial, Helvetica;
+    color: white;
+    font-size: 30px;
+    background-color: #000000;
+    flex: 1;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 1vw;
+}
+
+.contactdetails {
+    text-decoration: underline;
+    color: white;
+    font-family: monospace, Arial, Helvetica;
+}
+
+#footermessage {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    font-size: 25px;
+    flex: 1;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#gettingstarteddiv {
+    background-color: #000000;
+    color: white;
+    font-size: 25px;
+    flex: 1;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+#mailbutton {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 1vh 2vw;
+    margin-top: 1vh;
+}
+
+#endimagesdiv {
+    padding-top: 1vh;
+    background-color: #000000;
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+#whiteborder {
+    visibility: hidden;
+    border: 2px solid #ffffff;
+    margin: 0px;
+}
+
+@media screen and (max-width: 970px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    #topbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #topleftlogo {
+        padding-left: 0;
+    }
+
+    #logo {
+        height: 45px;
+    }
+
+    #logoballoon {
+        height: 45px;
+    }
+
+    #topname {
+        font-weight: bold;
+        font-family: 'Georgia', Arial;
+        font-size: 3em;
+        border-radius: 0;
+    }
+
+    header nav {
+        margin-left: 0;
+    }
+
+    header nav ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 3vw;
+    }
+
+    .rightmost {
+        padding-right: 0;
+    }
+
+    #topfooter {
+        flex-direction: column;
+    }
+
+    #contactinfo {
+        margin-bottom: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #footermessage {
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    #gettingstarteddiv {
+        margin-bottom: 0;
+    }
+
+    #endimagesdiv {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    #whiteborder {
+        visibility: visible;
+        margin-top: 3vh;
+        border-radius: 100%;
+    }
+}
