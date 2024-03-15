@@ -24,7 +24,6 @@ body {
     font-family: 'Georgia', Arial;
     font-size: 4em;
     background-color: rgba(255, 255, 255, 0.5);
-    /*background-color: rgb(151, 179, 201, 0.5);*/
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -94,19 +93,17 @@ header nav ul li a:hover {
 
 .commonborder {
     border: 2px solid #000000;
-    margin: 0px;
-    width: 100vw;
+    margin: 0 auto;
+    width: 99%;
 }
 
 #topfooter {
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: row;
     background-color: #000000;
 }
 
 #contactinfo {
-    font-family: Arial, Helvetica;
     color: white;
     font-size: 30px;
     background-color: #000000;
@@ -119,7 +116,6 @@ header nav ul li a:hover {
 .contactdetails {
     text-decoration: underline;
     color: white;
-    font-family: monospace, Arial, Helvetica;
 }
 
 #footermessage {
@@ -168,6 +164,10 @@ header nav ul li a:hover {
     visibility: hidden;
     border: 2px solid #ffffff;
     margin: 0px;
+}
+
+#footer {
+    font-family:'Times New Roman', 'Trebuchet MS', sans-serif, Arial;
 }
 
 @media screen and (max-width: 970px) {

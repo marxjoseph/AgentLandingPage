@@ -22,3 +22,17 @@
     color: #003cbe;
     margin-bottom: 5vh;
 }
+
+#buyingformsmall {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #buyingformsmall {
+        display: block;
+    }
+
+    #buyingformbig {
+        display: none;
+    }
+}
