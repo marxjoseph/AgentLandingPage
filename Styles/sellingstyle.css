@@ -9,3 +9,17 @@
     align-items: center;
     gap: 2.5vh;
 }
+
+#sellingformsmall {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #sellingformsmall {
+        display: block;
+    }
+
+    #sellingformbig {
+        display: none;
+    }
+}
